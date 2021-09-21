@@ -10,6 +10,7 @@ import { CoursesService } from './courses.service';
 import { SummaryPipe } from './summary.pipe';
 
 import { TitleCasePipe } from './title-case.pipe';
+import { StarComponent } from './star/star.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TitleCasePipe } from './title-case.pipe';
     CoursesComponent,
     CourseComponent,
     SummaryPipe,
-    TitleCasePipe
+    TitleCasePipe,
+    StarComponent
   ],
   imports: [
     BrowserModule,
