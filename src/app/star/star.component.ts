@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 @Component({
@@ -6,8 +6,9 @@ import "bootstrap-icons/font/bootstrap-icons.css";
   templateUrl: './star.component.html',
   styleUrls: ['./star.component.css']
 })
-export class StarComponent implements OnInit {
- @Input() isStar: boolean | any;
+export class StarComponent {
+ @Input('isStar') isStar: boolean | any
+ @Output('change') click = new EventEmitter
 
   constructor() { }
 
@@ -16,5 +17,10 @@ export class StarComponent implements OnInit {
 
   onClick(){
     this.isStar = !this.isStar
+    this.click.emit({ newValue: this.isStar})
   }
+}
+
+export interface StarChangedEventArgs{
+  newValue: boolean
 }

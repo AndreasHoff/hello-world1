@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StarChangedEventArgs } from './star/star.component';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,8 @@ export class AppComponent {
     title: '',
     isStar: true
   }
-}
 
-/* onFavoriteChanged(){
-  console.log('favorite changed')
-} */
+  onStarChanged(eventArgs: StarChangedEventArgs){
+    console.log('star changed', eventArgs)
+  }
+}

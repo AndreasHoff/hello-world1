@@ -4,4 +4,4 @@
 <br>
 {{ post.title | titleCase }}
 <br>
-<star [isStar]="post.isStar"></star>
+<star [isStar]="post.isStar" (change)="onStarChanged($event)" ></star>
