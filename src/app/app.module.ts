@@ -11,6 +11,8 @@ import { SummaryPipe } from './summary.pipe';
 
 import { TitleCasePipe } from './title-case.pipe';
 import { StarComponent } from './star/star.component';
+import { PanelComponent } from './panel/panel.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { StarComponent } from './star/star.component';
     CourseComponent,
     SummaryPipe,
     TitleCasePipe,
-    StarComponent
+    StarComponent,
+    PanelComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,

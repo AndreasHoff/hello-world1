@@ -1,10 +1,11 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 @Component({
   selector: 'star',
   templateUrl: './star.component.html',
-  styleUrls: ['./star.component.css']
+  styleUrls: ['./star.component.css'],
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class StarComponent {
  @Input('isStar') isStar: boolean | any

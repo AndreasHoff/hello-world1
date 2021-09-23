@@ -12,6 +12,13 @@ export class AppComponent {
     isStar: true
   }
 
+  tweet = {
+    body: '...',
+    likesCount: 10,
+    isLiked: true
+
+  }
+
   onStarChanged(eventArgs: StarChangedEventArgs){
     console.log('star changed', eventArgs)
   }
