@@ -16,8 +16,11 @@ export class AppComponent {
     body: '...',
     likesCount: 10,
     isLiked: true
-
   }
+
+  courses = [
+   
+  ]
 
   onStarChanged(eventArgs: StarChangedEventArgs){
     console.log('star changed', eventArgs)
