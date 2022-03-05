@@ -1,28 +1,20 @@
- <div *ngIf="courses.length > 0">
-     List of courses
- </div>
- <div *ngIf="courses.length == 0">
-     No courses yet
- </div>
+<div *ngIf="courses.length > 0">List of courses</div>
+<div *ngIf="courses.length == 0">No courses yet</div>
 
- <h1>Angular</h1>
+<h1>Angular</h1>
 
-<input type="text" [(ngModel)]="post.title">
-<br>
+<input type="text" [(ngModel)]="post.title" />
+<br />
 {{ post.title | titleCase }}
-<br>
-<star [isStar]="post.isStar" (change)="onStarChanged($event)" ></star>
+<br />
+<star [isStar]="post.isStar" (change)="onStarChanged($event)"></star>
 
 <bootstrap-panel>
-    <ng-container class="heading">Heading</ng-container>
-    <div class="body">
-        <h2>Body</h2>
-        <p>Some content here...</p>
-    </div>
+  <ng-container class="heading">Heading</ng-container>
+  <div class="body">
+    <h2>Body</h2>
+    <p>Some content hereasdsadsadasdd...</p>
+  </div>
 </bootstrap-panel>
 
-
-<like 
-    [likesCount]="tweet.likesCount"
-    [isActive]="tweet.isLiked"
-></like>
+<like [likesCount]="tweet.likesCount" [isActive]="tweet.isLiked"></like>
