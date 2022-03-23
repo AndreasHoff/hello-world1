@@ -13,8 +13,19 @@
   <ng-container class="heading">Heading</ng-container>
   <div class="body">
     <h2>Body</h2>
-    <p>Some content hereasdsadsadasdd...</p>
+    <p>Some content here...</p>
   </div>
 </bootstrap-panel>
-
+<div>
 <like [likesCount]="tweet.likesCount" [isActive]="tweet.isLiked"></like>
+</div>
+<div>
+  <button (click)="loadCourses()">Load Courses</button>
+</div>
+<button (click)="onAdd()">Add</button>
+<ul>
+  <li *ngFor="let course of courses; trackBy: trackCourse">
+    {{ course.name }}
+    <button (click)="onChange(course)">Remove</button>
+  </li>
+</ul>
