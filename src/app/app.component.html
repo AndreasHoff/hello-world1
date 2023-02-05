@@ -1,4 +1,4 @@
-<div *ngIf="courses.length > 0">List of courses</div>
+<div *ngIf="courses.length > 3">List of courses</div>
 <div *ngIf="courses.length == 0">No courses yet</div>
 
 <h1>Angular</h1>
@@ -29,3 +29,5 @@
     <button (click)="onChange(course)">Remove</button>
   </li>
 </ul>
+
+<input type="text" appInputFormat>

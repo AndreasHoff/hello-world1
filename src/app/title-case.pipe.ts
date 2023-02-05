@@ -13,7 +13,7 @@ export class TitleCasePipe implements PipeTransform {
       let word = words[i];
       if (i > 0 && this.isPreposition(word))
         words[i] = word.toLowerCase();
-      else 
+      else
         words[i] = this.toTitleCase(word);
     }
 
